@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>发展起源</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="bg" id="development5"><div>
+	 <div font style="font-size:18pt; font-family:华文行楷;" class="div4"> 
+	<div>
+		<div>
+		<p align="center" font style="color:#B5A642">明辨是非</p>
+		<p>“一厘馆”、“二厘馆”、茶居都供同样的点心，其区别在于价格和设备，三者消费价格逐渐递增。</p>
+		</div>
+		<div>
+  	<ul class="imglist3"> 
+    <li>
+		<img id="1" src="img/development/10.png" alt=""/>
+		<span>正确</span>
+    </li> 
+    <li>
+		<img id="2" src="img/development/11.png" alt=""/>
+		<span>错误</span>
+    </li> 
+	</ul></div>
+	</div>
+		<div align="center">
+		<div class="box22" id="box11">恭喜你，回答正确！</div>
+        <div class="box22" id="box22">很遗憾，回答错误！</div>
+		</div>
+		<script type="text/javascript">
+
+	window.onload = function(){
+		var arr = document.getElementsByTagName('img');
+		for(var i = 0;i<arr.length;i++){
+			arr[i].onclick = function(){
+				if (this.id == '1' )
+				{
+					document.getElementById("box11").style.display = 'block' ;
+					document.getElementById("box22").style.display = 'none' ;
+				}
+				else
+				{
+					document.getElementById("box11").style.display = 'none' ;
+					document.getElementById("box22").style.display = 'block' ;
+					
+				}
+			}
+		}
+	}
+</script>
+	</div>	
+	<div class="btn">
+	<a href="development4.html"><img src="img/development/6.png" width="101" height="25" alt="" style="margin: 45px 0px 0px -40px"/></a>
+	<a href="list.html"><img src="img/development/8.png" width="80" height="25" alt="" style="margin: 45px 0px 0px 200px"/></a>
+	</div>
+	</div>
+</div>
+</body>
+</html>
+

@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>组成部分</title>
+<link rel="stylesheet" type="text/css" href="style.css">	
+</head>
+<body>
+<div class="bg" id="content2">
+  <div class="menu" font style="font-size:18pt; font-family:华文行楷">
+		<ul>
+            <li><p id="1" class="btn2">铁观音</p></li>
+            <li><p id="2" class="btn1">普洱</p></li>
+            <li><p id="3" class="btn1">菊花</p></li>
+			<li><p id="4" class="btn1">牛蒡</p></li>
+			<li><p id="5" class="btn1">茉莉花</p></li>
+        </ul>
+        <div class="box1" id="box1">&nbsp;&nbsp;&nbsp;&nbsp;最能代表广州早茶文化的估计是普洱茶熟茶，它茶性温和，不容易醉茶，可谓老少佳宜。普洱茶茶汤浓厚，香气持久，香型独特，滋味浓醇，经久耐泡。普洱茶啜饮入口，虽茶汤入口略感苦涩，但待茶汤于喉舌间略作停留时，即可感受茶汤沁渗齿龈，令人神清气爽。<p align="middle"><img src="img/content/6.jpg" width="200" height="140" alt=""/><img src="img/content/7.jpg" width="200" height="140" alt=""/><img src="img/content/8.jpg" width="200" height="140" alt=""/></p></div>
+        <div class="box1" id="box2">&nbsp;&nbsp;&nbsp;&nbsp;铁观音是中国十大名茶之一,独具“观音韵”，清香雅韵，冲泡后有天然的兰花香，滋味纯浓,香气馥郁持久，有“七泡有余香”之誉 。除具有一般茶叶的保健功能外，还具有抗衰老、抗动脉硬化、防治糖尿病、减肥健美、防治龋齿、清热降火，敌烟醒酒等功效。<p align="middle"><img src="img/content/9.jpg" width="200" height="140" alt=""/><img src="img/content/10.jpg" width="200" height="140" alt=""/><img src="img/content/11.jpg" width="200" height="140" alt=""/></p></div>
+        <div class="box1" id="box3">&nbsp;&nbsp;&nbsp;&nbsp;菊花茶经过鲜花采摘、阴干、生晒蒸晒、烘培等工序制作而成。据古籍记载，菊花味甘苦，性耐寒，有散风清热、清肝明目和解毒消炎等作用。随着生活水平的提高，人们越来越重视生活的质量，因而具有多重保健功能的茶用菊花也越来越受到人们的喜爱。<p align="middle"><img src="img/content/12.jpg" width="200" height="140" alt=""/><img src="img/content/13.jpg" width="200" height="140" alt=""/><img src="img/content/14.jpg" width="200" height="140" alt=""/></p></div>
+		<div class="box1" id="box4">&nbsp;&nbsp;&nbsp;&nbsp;牛蒡茶是以中草药牛蒡根为原料的纯天然茶品,色泽金黄、是保健饮品。饮牛蒡茶具有利尿通便，排毒养颜，调节血糖血脂，降血压的功效。牛蒡所含丰富的食物纤维为水溶性的，它可以减缓食品释放出的能量,加速脂肪酸分解的速度,减弱脂肪在体内的聚集。<p align="middle"><img src="img/content/18.jpg" width="200" height="140" alt=""/><img src="img/content/19.jpg" width="200" height="140" alt=""/><img src="img/content/20.jpg" width="200" height="140" alt=""/></p></div>
+        <div class="box1" id="box5">&nbsp;&nbsp;&nbsp;&nbsp;茉莉花茶将茶叶和茉莉鲜花进行拼和、窨制，使茶叶吸收花香而成的，茶香与茉莉花香交互融合，列作人间第一香。茉莉花茶寒邪，助理郁，是天然保健饮品，但喝多了会内分泌紊乱和月经失调，女性经期、怀孕期、哺乳期、临产期、更年期不宜饮用更多。<p align="middle"><img src="img/content/15.jpg" width="200" height="140" alt=""/><img src="img/content/16.jpg" width="200" height="140" alt=""/><img src="img/content/17.jpg" width="200" height="140" alt=""/></p></div>
+	  <div class="btn">
+		 <a href="content1.html"><img src="img/content/5.png" width="70" height="25" alt="" style="margin:0px 0px 0px 360px"/></a>
+	  </div>
+		</div>
+    <script type="text/javascript">
+
+        window.onload = function(){
+            var arr = document.getElementsByTagName('p');
+            for(var i = 0;i<arr.length;i++){
+                arr[i].onclick = function(){
+                    if (this.id == '1' )
+                    {
+                        document.getElementById("box1").style.display = 'block' ;
+                        document.getElementById("box2").style.display = 'none' ;
+                        document.getElementById("box3").style.display = 'none' ;
+						document.getElementById("box4").style.display = 'none' ;
+						document.getElementById("box5").style.display = 'none' ;
+                    }
+                    else if(this.id == '2')
+                    {
+                        document.getElementById("box1").style.display = 'none' ;
+                        document.getElementById("box2").style.display = 'block' ;
+                        document.getElementById("box3").style.display = 'none' ;
+						document.getElementById("box4").style.display = 'none' ;
+						document.getElementById("box5").style.display = 'none' ;
+                    }
+					else if(this.id == '3')
+                    {
+                        document.getElementById("box1").style.display = 'none' ;
+                        document.getElementById("box2").style.display = 'none' ;
+                        document.getElementById("box3").style.display = 'block' ;
+						document.getElementById("box4").style.display = 'none' ;
+						document.getElementById("box5").style.display = 'none' ;
+                    }
+					else if(this.id == '4')
+                    {
+                        document.getElementById("box1").style.display = 'none' ;
+                        document.getElementById("box2").style.display = 'none' ;
+                        document.getElementById("box3").style.display = 'none' ;
+						document.getElementById("box4").style.display = 'block' ;
+						document.getElementById("box5").style.display = 'none' ;
+                    }
+                    else{
+                        document.getElementById("box1").style.display = 'none' ;
+                        document.getElementById("box2").style.display = 'none' ;
+                        document.getElementById("box3").style.display = 'none';
+						document.getElementById("box4").style.display = 'none' ;
+						document.getElementById("box5").style.display = 'block' ;
+                    }
+                    if(this.className == 'btn1'){
+                        this.className = 'btn2';
+                        var name = this.id;
+                        var btn = document.getElementsByClassName('btn2');
+                        for(var j=0;j<btn.length;j++){
+                            if(btn[j].id!=name){
+                                btn[j].className = 'btn1';
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</div>
+</body>
+</html>
+

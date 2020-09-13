@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>组成部分</title>
+<link rel="stylesheet" type="text/css" href="style.css">	
+</head>
+<body>
+<div class="bg" id="content3">
+	<div align="center"><img src="img/content/22.png" width="367" height="50" alt=""/></div>
+  <div font style="font-size:18pt; font-family:华文行楷;">
+	<div font style="color:#B5A642" class="btn">
+	<a href="content1.html"><img src="img/content/5.png" width="70" height="25" alt="" style="margin:10px 0px 0px 470px"/></a>
+	<a href="content4.html"><img src="img/content/27.png" width="90" height="25" alt="" style="margin:0px 0px 0px 260px"/></a>
+	<p align="center">四大天王</p>
+  	<ul class="imglist1"> 
+    <li>
+        <img id="1" src="img/content/23.png" alt=""/>
+		<span>点心之王—虾饺</span>
+    </li> 
+    <li>
+        <img id="2" src="img/content/24.png" alt=""/>
+		<span>爆口考功夫—叉烧包</span>
+    </li> 
+    <li>
+        <img id="3" src="img/content/25.png" alt=""/>
+		<span>集南北精髓—干蒸烧卖</span>
+    </li> 
+    <li>
+        <img id="4" src="img/content/26.png" alt=""/>
+		<span>中西潮流—蛋挞</span>
+    </li> 
+	</ul>
+	</div>
+		<div align="center">
+		<div class="box2" id="box11">虾饺馅料有虾，有肉，有笋。形状为梳子形，每只不少于十二摺，呈弯梳状，故又有“弯梳饺”之美名。上乘的虾饺，皮白如雪，薄如纸，半透明，内馅隐约可见，吃起来爽滑清鲜，美味诱人。</div>
+        <div class="box2" id="box22">好的叉烧包采用肥瘦适中的叉烧作馅，包制时要捏制成雀笼形，包皮蒸熟後软滑刚好，发酵适当，稍微裂开露出叉烧馅料，散发出阵阵叉烧的香味，十分考验点心师傅的功夫。</div>
+        <div class="box2" id="box33">干蒸烧卖同北方的“烧麦”系同源品种，多以猪肉、牛肉或鲜虾配以马蹄粒、笋粒等爽口配料，使其更加鲜香爽口，肥美不膻。用薄面皮裹半露的肉馅料蒸熟，色鲜味美，质地爽润。</div>
+		<div class="box2" id="box44">新鲜出炉的蛋挞散发出诱人的奶香味，金黄的表皮层次松化，金黄的蛋液胀卜卜，咸香的酥皮与蛋浆的甜味相得益彰，传统蛋挞实际上叫“蛋砵”，为 了顺应潮流吸引顾客才更名为蛋挞。</div>
+	</div>
+  </div>
+</div>
+<script type="text/javascript">
+
+	window.onload = function(){
+		var arr = document.getElementsByTagName('img');
+		for(var i = 0;i<arr.length;i++){
+			arr[i].onclick = function(){
+				if (this.id == '1' )
+				{
+					document.getElementById("box11").style.display = 'block' ;
+					document.getElementById("box22").style.display = 'none' ;
+					document.getElementById("box33").style.display = 'none' ;
+					document.getElementById("box44").style.display = 'none' ;
+				}
+				else if(this.id == '2')
+				{
+					document.getElementById("box11").style.display = 'none' ;
+					document.getElementById("box22").style.display = 'block' ;
+					document.getElementById("box33").style.display = 'none' ;
+					document.getElementById("box44").style.display = 'none' ;
+				}
+				else if(this.id == '3')
+				{
+					document.getElementById("box11").style.display = 'none' ;
+					document.getElementById("box22").style.display = 'none' ;
+					document.getElementById("box33").style.display = 'block' ;
+					document.getElementById("box44").style.display = 'none' ;
+				}
+				else
+				{
+					document.getElementById("box11").style.display = 'none' ;
+					document.getElementById("box22").style.display = 'none' ;
+					document.getElementById("box33").style.display = 'none' ;
+					document.getElementById("box44").style.display = 'block' ;
+				}
+			}
+		}
+	}
+</script>
+</body>
+</html>
+
